@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 body{
     margin: 0;
-    background-color: #000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: Poppins;
     font-size: 12px;
 }
@@ -25,19 +26,19 @@ header{
 }
 
 header a{
-    color: #ffffff;
+    color: #000000;
     margin-right: 5px;
     padding: 5px 10px;
     transition: 0.2s;
 }
 
 a.active{
-    background: #023679d9;
+    background: #14e4ffcb;
     border-radius: 2px;
 }
 
 header a:hover{
-    background: #023679d9;
+    background: #14e4ffcb;
     border-radius: 2px;
 }
 
@@ -45,10 +46,9 @@ header a:hover{
 /* slide principal */
 
 .slider{
-    height: 600px;
+    height: 730px;
     margin-top: -50px;
     width: 78%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -58,11 +58,13 @@ header a:hover{
     position: relative;
     inset: 0 0 0 0;
 }
+
 .slider .list .item img{
     width: 45%;
     height: 100vh;
    object-fit: cover;
 }
+
 .slider .list .item .content{
     position: absolute;
     top: 0%;
@@ -73,7 +75,7 @@ header a:hover{
     transform: translateX(-70%);
     padding-right: 20%;
     box-sizing: border-box;
-    color: #fff;
+    color: #000000;
     text-shadow: 0 5px 10px #0004;
 }
 
@@ -88,7 +90,7 @@ header a:hover{
 }
 .slider .list .item .button{
     display: grid;
-    grid-template-columns: repeat(2, 130px);
+    grid-template-columns: repeat(2, 150px);
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
@@ -98,7 +100,7 @@ header a:hover{
     background-color: #eee;
     font-family: Poppins;
     font-weight: 900;
-    cursor: pointer;
+    cursor: pointer; 
     transition: 0.4s;
     letter-spacing: 0.3px;
 }
@@ -114,7 +116,7 @@ header a:hover{
 }
 
 
-/* fim slide principal */
+/* fim de FOTO principal */
 
 
 /* Carrosel */
@@ -140,7 +142,6 @@ header a:hover{
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /*fim Carrosel */
@@ -171,7 +172,7 @@ header a:hover{
 }
 .nextPrevArrows button:hover{
     background-color: #fff;
-    color: #000;
+    color: #020202;
 }
 
 /* Animação */
@@ -180,7 +181,8 @@ header a:hover{
 }
 
 
-/* animation text in first item */
+/* texto de animação no primeiro item */
+
 .slider .list .item:nth-child(1) .content .title,
 .slider .list .item:nth-child(1) .content .type,
 .slider .list .item:nth-child(1) .content .description,
@@ -213,44 +215,6 @@ header a:hover{
     animation-delay: 1s !important;
 }
 
-
-/* Rodapé*/
-
-footer{
-    background-color: #023679d9;;
-}
-
-footer .container{
-    display: flex;
-    color: white;
-}
-
-footer .container ul{
-    width: 45%;
-}
-
-footer .container h3{
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-footer .redes-socias img{
-    margin-right: 10px;
-}
-
-footer .container ul > p{
-    margin-bottom: 10px;
-}
-
-footer.container{
-    margin: 10px 0;
-}
-
-footer .container a{
-    color: #ffffff;
-}
-
-/*fim Rodapé*/
 
 
 /* Animação para o próximo Clique no botão*/
@@ -304,7 +268,15 @@ footer .container a{
 
 
 
-/* Animation for prev button click */
+/* Animaçao para clicar no botao */
+
+/* Footer*/
+
+
+
+/*fim Footer*/
+
+
 .slider.prev .list .item:nth-child(2){
     z-index: 2;
 }
@@ -358,11 +330,5 @@ footer .container a{
     .slider .list .item .content .title{
         font-size: 50px;
     }
-footer .container{
-    flex-direction: column;
-}
-footer .container ul{
-    width: 100%;
-    margin-bottom: 30px;
-}
+
 }
